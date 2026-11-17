@@ -1,0 +1,11 @@
+PROJECT AETHEL - DIGITAL BROCHURE
+
+IT  1. Estrarre tutto lo zip in una cartella (non aprire i file dentro lo zip).
+    2. Aprire con doppio clic "Project Aethel - Brochure digitale (IT).html" (Chrome, Safari o Edge).
+    3. La cartella "media" deve restare accanto ai file .html: contiene video e immagini.
+    I caratteri tipografici si caricano da internet; senza connessione la pagina usa caratteri di riserva.
+
+EN  1. Extract the whole zip into a folder (do not open the files from inside the zip).
+    2. Double-click "Project Aethel - Digital Brochure (EN).html" (Chrome, Safari or Edge).
+    3. Keep the "media" folder next to the .html files: it holds the videos and images.
+    Fonts load from the internet; offline, the page falls back to standard fonts.
