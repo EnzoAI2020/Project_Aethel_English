@@ -228,6 +228,7 @@ body{overflow-x:clip}
 .vcard .vsmall img{aspect-ratio:16/9}
 .vcard .body{padding:20px 24px 24px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .vcard h3{font-size:28px}
+@media (max-width:640px){.vcard .body{flex-direction:column;gap:6px;padding:18px 18px 22px}.vcard h3{font-size:24px}}
 .vcard p{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--ember)}
 /* motion: content is visible at rest; reveal only nudges position */
 .rv{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
@@ -367,7 +368,7 @@ html{-webkit-text-size-adjust:100%}
     <p class="claim">A five-star resort carved into the cliffs above the Tyrrhenian Sea, facing the Aeolian Islands and Stromboli. Offered to institutional investors as a turnkey Forward Purchase.</p>
   </div>
   <button class="sound" id="sound" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path id="wave" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" opacity=".35"/></svg><span id="soundlabel">Play with sound</span></button>
-  <span class="tag"><i></i>Film: drone footage of the coast + AI animations of renderings · illustrative</span>
+  
 </header>
 
 <!-- COAST -->
@@ -379,7 +380,7 @@ html{-webkit-text-size-adjust:100%}
       <p class="lede">Zambrone sits on the Costa degli Dei, the stretch of Calabrian coast between Pizzo and Capo Vaticano. White cliffs, clear water, Tropea a few minutes away and, on the horizon, the seven Aeolian Islands.</p>
     </div>
     <div class="reel">
-      <div class="frame"><video data-src="media/coast_cliffs.mp4" poster="media/coast_cliffs.jpg" muted loop playsinline preload="none" aria-label="Drone footage of cliffs and coves on the Costa degli Dei"></video><span class="tag"><i style="background:var(--sea)"></i>Drone footage of the Costa degli Dei</span></div>
+      <div class="frame"><video data-src="media/coast_cliffs.mp4" poster="media/coast_cliffs.jpg" muted loop playsinline preload="none" aria-label="Drone footage of cliffs and coves on the Costa degli Dei"></video></div>
       <div class="frame"><video data-src="media/isola.mp4" poster="media/isola.jpg" muted loop playsinline preload="none" aria-label="Drone footage of Tropea and the Santa Maria dell&#x27;Isola sanctuary"></video></div>
       <div class="frame"><video data-src="media/tropea.mp4" poster="media/tropea.jpg" muted loop playsinline preload="none" aria-label="Drone footage of the coast near Tropea"></video></div>
     </div>
@@ -416,11 +417,11 @@ html{-webkit-text-size-adjust:100%}
     </div>
     <div class="focus">
       <article class="rv">
-        <div class="frame"><video data-src="media/tropea_town.mp4" poster="media/tropea_town.jpg" muted loop playsinline preload="none" aria-label="Drone footage of the old town of Tropea on its cliff above the sea"></video><span class="tag"><i style="background:var(--sea)"></i>Drone footage of the Costa degli Dei</span></div>
+        <div class="frame"><video data-src="media/tropea_town.mp4" poster="media/tropea_town.jpg" muted loop playsinline preload="none" aria-label="Drone footage of the old town of Tropea on its cliff above the sea"></video></div>
         <div class="body"><h3>Tropea</h3><p class="fact num">≈ 9 km from the resort</p><p>The Pearl of the Tyrrhenian: an old town built on the edge of a sandstone cliff, white beaches below and the sanctuary of Santa Maria dell’Isola on its rock. In December and January the Borgo Incantato festival lights the historic centre.</p></div>
       </article>
       <article class="rv">
-        <div class="frame"><video data-src="media/stromboli_cone.mp4" poster="media/stromboli_cone.jpg" muted loop playsinline preload="none" aria-label="Drone footage of the sun setting behind the cone of Stromboli"></video><span class="tag"><i style="background:var(--sea)"></i>Drone footage of the Costa degli Dei</span></div>
+        <div class="frame"><video data-src="media/stromboli_cone.mp4" poster="media/stromboli_cone.jpg" muted loop playsinline preload="none" aria-label="Drone footage of the sun setting behind the cone of Stromboli"></video></div>
         <div class="body"><h3>Stromboli</h3><p class="fact">In view from the site</p><p>One of the seven Aeolian Islands, a UNESCO World Heritage site, and an active volcano. From the terraces the sun sets behind its cone. In summer, boats for the Aeolian Islands leave from the port of Vibo Marina.</p></div>
       </article>
     </div>
@@ -432,8 +433,8 @@ html{-webkit-text-size-adjust:100%}
         <ul class="chips"><li>Red onion of Tropea (IGP)</li><li>’Nduja of Spilinga</li><li>Pecorino of Monte Poro</li><li>Swordfish and Tyrrhenian fish</li><li>Calabrian chilli and bergamot</li><li>Cirò and the wines of Calabria</li></ul>
       </div>
       <div class="gal four" style="margin-top:0;grid-template-columns:1fr">
-        <figure><img src="media/ai_food.jpg" alt="AI-generated image of a table of Calabrian specialities on a terrace above the sea"><figcaption><b>The Calabrian table</b>AI-generated image · illustrative</figcaption></figure>
-        <figure><img src="media/ai_wine.jpg" alt="AI-generated image of a wine tasting in a stone cellar"><figcaption><b>Cellar and tastings</b>AI-generated image · illustrative</figcaption></figure>
+        <figure><img src="media/ai_food.jpg" alt="AI-generated image of a table of Calabrian specialities on a terrace above the sea"><figcaption><b>The Calabrian table</b></figcaption></figure>
+        <figure><img src="media/ai_wine.jpg" alt="AI-generated image of a wine tasting in a stone cellar"><figcaption><b>Cellar and tastings</b></figcaption></figure>
       </div>
     </div>
   </div>
@@ -452,7 +453,7 @@ html{-webkit-text-size-adjust:100%}
         <div class="fig"><b class="num">≈ 660</b><span>sqm of land per unit</span></div>
       </div>
     </div>
-    <div class="frame rv"><video data-src="media/aerial.mp4" poster="media/aerial.jpg" muted loop playsinline preload="none" aria-label="AI animation of the aerial project rendering of the resort on the hillside"></video><span class="tag"><i></i>AI animation of project rendering · illustrative</span></div>
+    <div class="frame rv"><video data-src="media/aerial.mp4" poster="media/aerial.jpg" muted loop playsinline preload="none" aria-label="AI animation of the aerial project rendering of the resort on the hillside"></video></div>
   </div>
 </section>
 
@@ -486,7 +487,7 @@ html{-webkit-text-size-adjust:100%}
       <p class="lede">A long driveway from the coastal road leads through security gates to valet parking and a 500 sqm reception and concierge. Three separate check-ins (hotel, events, villas) and a private helipad keep every arrival discreet.</p>
     </div>
   </div>
-  <span class="tag"><i></i>AI animation of project rendering · illustrative</span>
+  
 </section>
 
 <!-- ACCOMMODATION -->
@@ -503,7 +504,7 @@ html{-webkit-text-size-adjust:100%}
         <div class="body"><div class="big num">96</div><h3>Suites of 45 sqm</h3><p>48 on the ground floor with garden and private pool, 48 upstairs with balcony and jacuzzi.</p></div>
       </article>
       <article class="key rv">
-        <div class="frame"><img src="media/ai_penthouse.jpg" alt="Project rendering of a suite interior"><span class="tag"><i style="background:var(--mute)"></i>AI-generated image · illustrative</span></div>
+        <div class="frame"><img src="media/ai_penthouse.jpg" alt="Project rendering of a suite interior"></div>
         <div class="body"><div class="big num">5</div><h3>Penthouse Suites of 100 sqm</h3><p>Townhouse-style penthouses with private lounge.</p></div>
       </article>
       <article class="key rv">
@@ -515,7 +516,7 @@ html{-webkit-text-size-adjust:100%}
         <div class="body"><div class="big num">1</div><h3>Bridal / Presidential Suite</h3><p>300 sqm above the events wing, with private lift from the event spaces. Sold as the Presidential Suite when not booked for a wedding.</p></div>
       </article>
     </div>
-    <div class="total"><b class="num">114 keys</b><span>96 suites + 5 penthouses + 12 villas + 1 bridal suite · 8,000 sqm net accommodation</span><span class="tag" style="background:none"><i></i>Images: project renderings, illustrative</span></div>
+    <div class="total"><b class="num">114 keys</b><span>96 suites + 5 penthouses + 12 villas + 1 bridal suite · 8,000 sqm net accommodation</span></div>
   </div>
 </section>
 
@@ -535,16 +536,16 @@ html{-webkit-text-size-adjust:100%}
         <li><b>Cliff-top aperitif terrace</b><span class="num">250 guests</span></li>
       </ul>
     </div>
-    <div class="frame rv" style="aspect-ratio:4/5"><video data-src="media/promenade.mp4" poster="media/promenade.jpg" muted loop playsinline preload="none" aria-label="AI animation of the retail promenade rendering at dusk"></video><span class="tag"><i></i>AI animation of project rendering · illustrative</span></div>
+    <div class="frame rv" style="aspect-ratio:4/5"><video data-src="media/promenade.mp4" poster="media/promenade.jpg" muted loop playsinline preload="none" aria-label="AI animation of the retail promenade rendering at dusk"></video></div>
   </div>
 </section>
 
 <section style="padding:0 0 120px">
   <div class="wrap gal four">
-    <figure><img src="media/ai_dining.jpg" alt="AI-generated image of the fine-dining restaurant with open kitchen and sea view at sunset"><figcaption><b>Fine-dining restaurant</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_rooftop.jpg" alt="AI-generated image of the rooftop bar at dusk with Stromboli on the horizon"><figcaption><b>Rooftop cocktail bar</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_banquet.jpg" alt="AI-generated image of the banqueting hall set for a wedding dinner, with glass wall onto the sea"><figcaption><b>Banqueting hall</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_wedding.jpg" alt="AI-generated image of a wedding aperitif on the cliff-top terrace at sunset"><figcaption><b>Weddings on the cliff</b>AI-generated image · illustrative</figcaption></figure>
+    <figure><img src="media/ai_dining.jpg" alt="AI-generated image of the fine-dining restaurant with open kitchen and sea view at sunset"><figcaption><b>Fine-dining restaurant</b></figcaption></figure>
+    <figure><img src="media/ai_rooftop.jpg" alt="AI-generated image of the rooftop bar at dusk with Stromboli on the horizon"><figcaption><b>Rooftop cocktail bar</b></figcaption></figure>
+    <figure><img src="media/ai_banquet.jpg" alt="AI-generated image of the banqueting hall set for a wedding dinner, with glass wall onto the sea"><figcaption><b>Banqueting hall</b></figcaption></figure>
+    <figure><img src="media/ai_wedding.jpg" alt="AI-generated image of a wedding aperitif on the cliff-top terrace at sunset"><figcaption><b>Weddings on the cliff</b></figcaption></figure>
   </div>
 </section>
 
@@ -561,15 +562,15 @@ html{-webkit-text-size-adjust:100%}
       <div class="fig" style="background:rgba(12,26,33,.72)"><b class="num">2</b><span>lane virtual golf with lounge</span></div>
     </div>
   </div>
-  <span class="tag"><i></i>AI animation of project rendering · illustrative</span>
+  
 </section>
 
 <section style="padding:10px 0 0">
   <div class="wrap gal four">
-    <figure><img src="media/ai_spa_indoor.jpg" alt="AI-generated image of the indoor hydrotherapy pool opening onto the sea"><figcaption><b>Hydrotherapy spa</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_golf.jpg" alt="AI-generated image of the indoor virtual golf lounge with two simulator bays and bar"><figcaption><b>Virtual golf lounge</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_tennis.jpg" alt="AI-generated image of the tennis courts among olive trees above the sea"><figcaption><b>Tennis</b>AI-generated image · illustrative</figcaption></figure>
-    <figure><img src="media/ai_padel.jpg" alt="AI-generated image of the glass-walled padel courts with the resort behind"><figcaption><b>Padel</b>AI-generated image · illustrative</figcaption></figure>
+    <figure><img src="media/ai_spa_indoor.jpg" alt="AI-generated image of the indoor hydrotherapy pool opening onto the sea"><figcaption><b>Hydrotherapy spa</b></figcaption></figure>
+    <figure><img src="media/ai_golf.jpg" alt="AI-generated image of the indoor virtual golf lounge with two simulator bays and bar"><figcaption><b>Virtual golf lounge</b></figcaption></figure>
+    <figure><img src="media/ai_tennis.jpg" alt="AI-generated image of the tennis courts among olive trees above the sea"><figcaption><b>Tennis</b></figcaption></figure>
+    <figure><img src="media/ai_padel.jpg" alt="AI-generated image of the glass-walled padel courts with the resort behind"><figcaption><b>Padel</b></figcaption></figure>
   </div>
 </section>
 
@@ -688,7 +689,7 @@ html{-webkit-text-size-adjust:100%}
       <div><span>Phone</span>+39 393 264 9362</div>
     </div>
   </div>
-  <span class="tag"><i style="background:var(--sea)"></i>Drone footage of the Costa degli Dei</span>
+  
 </section>
 
 <footer>
